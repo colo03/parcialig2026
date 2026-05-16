@@ -3,31 +3,64 @@
     font-family: 'Barlow', sans-serif;
 }
 main{
-    background-color: #fffdd0;
+    background-color: #fffee2;
 }
 body{
     background-image: url("../img/fondo.png");
 }
 .topbar, footer{
-    background-color: #fffdd0;
+    background-color: #fffee2;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-footer{
-    background-color: #fffdd0;
+footer address p {
+    background-color: #fffee2;
     font-size: 0.85rem;
+    padding-right: 0.5rem; 
+    padding-left: 0.5rem;
 }
 li{
     list-style: none;
     padding: 0.5rem;
     display:inline;
 }
+.bio{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    margin-bottom: 0.5rem;
+}
+.txt p{
+    font-size: 1rem;
+    display: block;
+    margin: 0.5rem;
+    padding-right: 0.5rem; 
+    padding-left: 0.5rem;
+}
+.txt h2{
+    font-size: 1.5rem;
+    display: block;
+    margin: 0.5rem;
+    padding-right: 0.5rem; 
+    padding-left: 0.5rem;
+}
+p q {
+    font-size: 0.9rem;
+    display: block;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+}
+.quote{
+    display: block;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+}
 /*Nav*/
 nav{
     display: flex;
     justify-content: flex-end;
-    background-color: #fffdd0;
+    background-color: #fffee2;
 }
 a:link, a:visited ,a:hover, a:active{
     color: rgb(14, 196, 202);
@@ -35,5 +68,19 @@ a:link, a:visited ,a:hover, a:active{
     text-decoration: none;
 }
 a:active, a:hover{
-    color: black;
+    color: rgb(71, 214, 102);
+}
+
+/*Img*/
+.images-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img.bioimage{
+    width: 30%;
+    height: auto;
+    margin: 1rem;
+    padding: 0.5rem; 
 }
