@@ -4,18 +4,52 @@
 }
 main{
     background-color: #fffee2;
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 1rem;
+    align-items: start;
+}
+main.index{
+    grid-template-columns: 1fr;
+}
+main.tecnologias{
+    grid-template-columns: 1fr auto 1fr;
+}
+/*Creadas por la ia, corregi valores que no me gustaron*/
+main.tecnologias .tecnologia-text.left{
+    grid-column: 1;
+    justify-self: start;
+   
+}
+main.tecnologias .tecnologia-text.right{
+    grid-column: 3;
+    justify-self: end;
+   
+}
+main.tecnologias .images-container{
+    grid-column: 2;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+main.tecnologias .images-container .bioimage{
+    width: 100%;
+    height: auto;
+    margin: 0.5rem auto;
 }
 body{
     background-image: url("../img/fondo.png");
 }
 .topbar, footer{
-    background-color: #fffee2;
+    background-color: #d8d7b3;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 footer address p {
-    background-color: #fffee2;
+    background-color: #d8d7b3;
     font-size: 0.85rem;
     padding-right: 0.5rem; 
     padding-left: 0.5rem;
@@ -26,10 +60,35 @@ li{
     display:inline;
 }
 .bio{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    gap: 1rem;
     margin: 1rem;
     margin-bottom: 0.5rem;
+    align-items: start;
+}
+.bio h2{
+    grid-column: 1 / -1;
+}
+aside{
+
+    justify-self: end;
+    width: auto;
+    padding: 1rem;
+    background-color: #fff7d4;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    align-self:start;
+    text-align: left;
+}
+.imagenesobras{
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem; 
+}
+main iframe{
+    grid-column: 1;
+    margin: 1rem;
+    padding: 0.5rem; 
 }
 .txt p{
     font-size: 1rem;
@@ -60,7 +119,7 @@ p q {
 nav{
     display: flex;
     justify-content: flex-end;
-    background-color: #fffee2;
+    background-color: #d8d7b3;
 }
 a:link, a:visited ,a:hover, a:active{
     color: rgb(14, 196, 202);
@@ -68,7 +127,7 @@ a:link, a:visited ,a:hover, a:active{
     text-decoration: none;
 }
 a:active, a:hover{
-    color: rgb(71, 214, 102);
+    color: rgb(243, 19, 19);
 }
 
 /*Img*/
@@ -80,6 +139,12 @@ a:active, a:hover{
 
 img.bioimage{
     width: 30%;
+    height: auto;
+    margin: 1rem;
+    padding: 0.5rem; 
+}
+img.obraimg{
+    width: 20%;
     height: auto;
     margin: 1rem;
     padding: 0.5rem; 
