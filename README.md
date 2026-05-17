@@ -1,2 +1,7 @@
 # parcialig2026
-Repositorio creado para el primer parcial de la materia informatica general Cadetdra Drelichman TN 2026
+
+Nombre/s Apellido/s: Valentín Piczman
+Primer Parcial - Informática General 
+Artes Multimediales - UNA
+Año 2026
+
